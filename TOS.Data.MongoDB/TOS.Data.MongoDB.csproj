@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RepositoryUrl>https://github.com/ogaiht/TOS</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.14.1" />
+    <PackageReference Include="TOS.Common" Version="0.1.1" />
+    <PackageReference Include="TOS.Common.Configuration" Version="0.1.1" />
+    <PackageReference Include="TOS.Common.DataModel" Version="0.1.1" />
+    <PackageReference Include="TOS.Common.MongoDB" Version="0.1.1" />
+    <PackageReference Include="TOS.Common.Text.Semantics" Version="0.1.1" />
+    <PackageReference Include="TOS.Data" Version="0.1.1" />
+  </ItemGroup>
+
+</Project>
