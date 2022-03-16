@@ -54,6 +54,7 @@ jobs:
     
     - name: Ensure GitHub Nuget Source
       run: |
+        dotnet nuget remove source github
         dotnet nuget add source ${{ env.NUGET_URL }} \
           -n github \
           -u ${{ secrets.PACKAGE_OWNER_NAME }} \
